@@ -8,10 +8,10 @@ const filePath = 'text.txt';
 const fileContent = 'Hello world';
 
 const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
-alert("writing to git")
+alert("2writing to git")
       
 const postData = {
-  message: 'Updating file2', // Commit message
+  message: 'Updating file', // Commit message
   content: btoa(fileContent), // Encode content as base64
 };
 

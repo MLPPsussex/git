@@ -1,3 +1,6 @@
+<html>
+  <body>
+    <script>
 const accessToken = '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';
 const repoOwner = 'MLPPsussex';
 const repoName = 'git';
@@ -5,7 +8,8 @@ const filePath = 'text.txt';
 const fileContent = 'Hello world';
 
 const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
-
+alert("writing to git")
+      
 const postData = {
   message: 'Updating file', // Commit message
   content: btoa(fileContent), // Encode content as base64
@@ -22,3 +26,7 @@ fetch(apiUrl, {
   .then(response => response.json())
   .then(data => console.log('File updated:', data))
   .catch(error => console.error('Error:', error));
+
+    </script>
+  </body>
+</html>

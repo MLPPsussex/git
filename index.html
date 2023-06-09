@@ -1,14 +1,17 @@
 <html>
   <body>
     <script>
-const accessToken = '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';
+const accessToken = process.env.GIT;
+
+// Use the 'githubToken' variable in your code
+;
 const repoOwner = 'MLPPsussex';
 const repoName = 'git';
 const filePath = 'text.txt';
 const fileContent = 'Hello world';
 
 const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
-alert("3writing to git")
+alert("4writing to git")
       
 const postData = {
   message: 'Updating file', // Commit message
